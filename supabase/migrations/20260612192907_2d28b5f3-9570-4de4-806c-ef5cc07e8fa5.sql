@@ -1,0 +1,1 @@
+UPDATE public.courses SET course_url = 'https://www.linkedin.com/learning/nano-tips-for-presenting-with-confidence-with-diana-yk-chan' WHERE title = 'Nano Tips for Presenting with Confidence with Diana YK Chan';

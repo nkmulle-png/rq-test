@@ -1,0 +1,14 @@
+include:
+  - project: 'WebMD/helios/DevOps/gitlab-ci.yml-templates'
+    ref: main
+    file:
+      - '/helios/build.yml'
+      - '/helios/devint.yml'
+      - '/helios/staging-lovable.yml'
+      - '/helios/production.yml'
+
+stages:
+  - build
+  - devint
+  - staging
+  - production
