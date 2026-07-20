@@ -1,0 +1,89 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --color-platform-linkedin: var(--platform-linkedin);
+  --color-platform-coursera: var(--platform-coursera);
+  --color-platform-coursera-plus: var(--platform-coursera-plus);
+  --color-platform-masterclass: var(--platform-masterclass);
+  --color-platform-sinek: var(--platform-sinek);
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.985 0.005 250);
+  --foreground: oklch(0.18 0.03 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.03 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.03 260);
+  --primary: #1B4CA1;
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.955 0.012 255);
+  --secondary-foreground: oklch(0.25 0.04 265);
+  --muted: oklch(0.955 0.012 255);
+  --muted-foreground: oklch(0.5 0.025 260);
+  --accent: oklch(0.93 0.04 268);
+  --accent-foreground: oklch(0.25 0.07 268);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.91 0.012 255);
+  --input: oklch(0.929 0.013 255.508);
+  --ring: #1B4CA1;
+
+  --platform-linkedin: #1f9d62;        /* green */
+  --platform-coursera: #5ea8de;        /* light blue */
+  --platform-coursera-plus: #215abb;   /* blue */
+  --platform-masterclass: #ef4d3a;     /* red */
+  --platform-sinek: #f4c430;
+
+  --gradient-hero: linear-gradient(135deg, #1B4CA1, oklch(0.55 0.2 295));
+  --shadow-card: 0 1px 2px 0 oklch(0.18 0.03 260 / 0.04), 0 4px 16px -4px color-mix(in oklab, #1B4CA1 8%, transparent);
+  --shadow-card-hover: 0 4px 8px 0 oklch(0.18 0.03 260 / 0.08), 0 16px 32px -8px color-mix(in oklab, #1B4CA1 20%, transparent);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: "Stack Sans Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  *, *::before, *::after {
+    font-feature-settings: normal !important;
+    font-variant-ligatures: normal;
+  }
+}

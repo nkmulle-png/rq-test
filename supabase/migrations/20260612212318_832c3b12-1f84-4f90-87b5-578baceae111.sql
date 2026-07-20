@@ -1,0 +1,1 @@
+DELETE FROM public.courses WHERE id = '7dd81f9f-648f-4c21-982e-43d3e9efccb6';
