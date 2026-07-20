@@ -6,6 +6,20 @@
                     "llm_version":  "claude-code/claude-sonnet-4-6",
                     "last_updated":  "2026-07-20T19:52:48.236Z",
                     "mode":  "claude-code"
-                }
-            ]
+                },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "-",
+      "llm_version": "manual",
+      "last_updated": "2026-07-20T20:43:44.329Z",
+      "mode": "manual"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "-",
+      "llm_version": "manual",
+      "last_updated": "2026-07-20T21:27:34.269Z",
+      "mode": "manual"
+    }
+  ]
 }
