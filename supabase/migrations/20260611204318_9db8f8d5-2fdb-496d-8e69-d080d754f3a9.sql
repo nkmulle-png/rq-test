@@ -1,0 +1,2 @@
+ALTER TABLE public.enrollments DROP CONSTRAINT IF EXISTS enrollments_app_user_id_topic_id_key;
+ALTER TABLE public.enrollments ADD CONSTRAINT enrollments_user_topic_course_key UNIQUE (app_user_id, topic_id, course_id);
