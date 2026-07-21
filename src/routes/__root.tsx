@@ -68,6 +68,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <script src="/env-config.js"></script>
         <HeadContent />
       </head>
       <body>
