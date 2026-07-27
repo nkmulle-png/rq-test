@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
+    "prebuild": "node -e \"const fs = require('fs'); let c = 'window.__RUNTIME_ENV__ = {};\\n// '; fs.writeFileSync('public/env-config.js', c.padEnd(2048, '*'));\"",
     "build": "vite build",
     "build:dev": "vite build --mode development",
-    "start": "node .output/server/index.mjs",
+    "start": "node scripts/inject-runtime-env.mjs && node .output/server/index.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."

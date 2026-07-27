@@ -1,12 +1,12 @@
 ﻿{
-    "log":  [
-                {
-                    "ticket_id":  "HELIOS-97990",
-                    "description":  "-",
-                    "llm_version":  "claude-code/claude-sonnet-4-6",
-                    "last_updated":  "2026-07-20T19:52:48.236Z",
-                    "mode":  "claude-code"
-                },
+  "log": [
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "-",
+      "llm_version": "claude-code/claude-sonnet-4-6",
+      "last_updated": "2026-07-20T19:52:48.236Z",
+      "mode": "claude-code"
+    },
     {
       "ticket_id": "HELIOS-97990",
       "description": "-",
@@ -47,6 +47,20 @@
       "description": "Add start script (node .output/server/index.mjs) so Helios npm start boots the TanStack node-server; verified /health returns 200 locally",
       "llm_version": "claude-code/claude-opus-4-8",
       "last_updated": "2026-07-27T20:42:05.000Z",
+      "mode": "claude"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "Chain runtime env injector into start (node scripts/inject-runtime-env.mjs then node .output/server/index.mjs) so ConfigManager Supabase vars reach window.__RUNTIME_ENV__; verified env-config.js populated (2048B) and /health 200 locally",
+      "llm_version": "claude-code/claude-opus-4-8",
+      "last_updated": "2026-07-27T21:10:43.000Z",
+      "mode": "claude"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "Restore prebuild that regenerates public/env-config.js padded to exactly 2048B (removed by same Lovable sync as start); keeps build-time placeholder size matched to the runtime injector, preventing env-config.js content-length mismatch",
+      "llm_version": "claude-code/claude-opus-4-8",
+      "last_updated": "2026-07-27T21:30:16.000Z",
       "mode": "claude"
     }
   ]
