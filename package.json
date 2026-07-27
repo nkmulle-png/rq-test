@@ -6,8 +6,6 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "prebuild": "node -e \"const fs = require('fs'); let c = 'window.__RUNTIME_ENV__ = {};\\n// '; fs.writeFileSync('public/env-config.js', c.padEnd(2048, '*'));\"",
-    "start": "node scripts/inject-runtime-env.mjs && node .output/server/index.mjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
@@ -73,7 +71,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
-    "@lovable.dev/vite-tanstack-config": "2.5.3",
+    "@lovable.dev/vite-tanstack-config": "2.7.7",
     "@types/node": "^22.16.5",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
