@@ -41,6 +41,13 @@
       "llm_version": "manual",
       "last_updated": "2026-07-21T15:13:36.638Z",
       "mode": "manual"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "Add start script (node .output/server/index.mjs) so Helios npm start boots the TanStack node-server; verified /health returns 200 locally",
+      "llm_version": "claude-code/claude-opus-4-8",
+      "last_updated": "2026-07-27T20:42:05.000Z",
+      "mode": "claude"
     }
   ]
 }
