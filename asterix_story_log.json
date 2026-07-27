@@ -55,6 +55,13 @@
       "llm_version": "claude-code/claude-opus-4-8",
       "last_updated": "2026-07-27T21:10:43.000Z",
       "mode": "claude"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "Restore prebuild that regenerates public/env-config.js padded to exactly 2048B (removed by same Lovable sync as start); keeps build-time placeholder size matched to the runtime injector, preventing env-config.js content-length mismatch",
+      "llm_version": "claude-code/claude-opus-4-8",
+      "last_updated": "2026-07-27T21:30:16.000Z",
+      "mode": "claude"
     }
   ]
 }
