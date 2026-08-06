@@ -13,6 +13,21 @@ import appCss from "../styles.css?url";
 import logoUrl from "@/assets/logo.svg";
 
 function NotFoundComponent() {
+  // Safety net: if an OAuth provider returns the browser to a path this app
+  // doesn't route (popup-blocked / in-app-browser redirect fallback), finish
+  // sign-in on the callback page instead of dead-ending on a 404.
+  if (typeof window !== "undefined") {
+    const search = window.location.search;
+    const hash = window.location.hash;
+    const hasOAuthReturn =
+      (search.includes("code=") && search.includes("state=")) ||
+      hash.includes("access_token=") ||
+      search.includes("error=access_denied");
+    if (hasOAuthReturn && window.location.pathname !== "/auth/callback") {
+      window.location.replace(`/auth/callback${search}${hash}`);
+      return null;
+    }
+  }
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
@@ -68,7 +83,6 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <script src="/env-config.js"></script>
         <HeadContent />
       </head>
       <body>
