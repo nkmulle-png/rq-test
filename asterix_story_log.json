@@ -62,6 +62,20 @@
       "llm_version": "claude-code/claude-opus-4-8",
       "last_updated": "2026-07-27T21:30:16.000Z",
       "mode": "claude"
+    },
+    {
+      "ticket_id": "ATHENA-3342",
+      "description": "-",
+      "llm_version": "claude-code/claude-sonnet-4-6",
+      "last_updated": "2026-08-06T21:10:06.461Z",
+      "mode": "claude-code"
+    },
+    {
+      "ticket_id": "HELIOS-98549",
+      "description": "Switch Google sign-in from the Lovable OAuth broker to supabase.auth.signInWithOAuth so login works on custom domains (the /~oauth/* broker path only exists on *.lovable.app and 404s on rdhq-training.webmdhelios.com)",
+      "llm_version": "claude-code/claude-opus-5",
+      "last_updated": "2026-08-06T21:30:00.000Z",
+      "mode": "claude"
     }
   ]
 }
