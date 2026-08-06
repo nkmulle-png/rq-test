@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { Session, User } from "@supabase/supabase-js";
 import { supabase } from "@/integrations/supabase/client";
-import { lovable } from "@/integrations/lovable";
 
 export type AppUser = {
   id: string;
@@ -87,9 +86,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     appUser,
     isManager,
     signInGoogle: async () => {
-      await lovable.auth.signInWithOAuth("google", {
-        redirect_uri: window.location.origin,
+      // Use Supabase's OAuth directly instead of the Lovable /~oauth/* broker.
+      // The broker path only exists on *.lovable.app; on custom domains like
+      // rdhq-training.webmdhelios.com it 404s. Supabase's authorize endpoint
+      // works on any domain, so this makes sign-in portable across all hosts.
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: window.location.origin,
+          queryParams: { access_type: "offline", prompt: "select_account" },
+        },
       });
+      if (error) console.error("Google sign-in failed:", error.message);
     },
     signOut: async () => {
       await supabase.auth.signOut();
