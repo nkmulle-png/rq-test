@@ -1,88 +1,116 @@
 ﻿{
-    "log":  [
-                {
-                    "ticket_id":  "HELIOS-97990",
-                    "description":  "-",
-                    "llm_version":  "claude-code/claude-sonnet-4-6",
-                    "last_updated":  "2026-07-20T19:52:48.236Z",
-                    "mode":  "claude-code"
-                },
-                {
-                    "ticket_id":  "HELIOS-97990",
-                    "description":  "-",
-                    "llm_version":  "manual",
-                    "last_updated":  "2026-07-20T20:43:44.329Z",
-                    "mode":  "manual"
-                },
-                {
-                    "ticket_id":  "HELIOS-97990",
-                    "description":  "-",
-                    "llm_version":  "manual",
-                    "last_updated":  "2026-07-20T21:27:34.269Z",
-                    "mode":  "manual"
-                },
-                {
-                    "ticket_id":  "HELIOS-97990",
-                    "description":  "-",
-                    "llm_version":  "manual",
-                    "last_updated":  "2026-07-21T12:48:31.034Z",
-                    "mode":  "manual"
-                },
-                {
-                    "ticket_id":  "HELIOS-97990",
-                    "description":  "-",
-                    "llm_version":  "manual",
-                    "last_updated":  "2026-07-21T13:47:04.762Z",
-                    "mode":  "manual"
-                },
-                {
-                    "ticket_id":  "HELIOS-97990",
-                    "description":  "-",
-                    "llm_version":  "manual",
-                    "last_updated":  "2026-07-21T15:13:36.638Z",
-                    "mode":  "manual"
-                },
-                {
-                    "ticket_id":  "HELIOS-97990",
-                    "description":  "Add start script (node .output/server/index.mjs) so Helios npm start boots the TanStack node-server; verified /health returns 200 locally",
-                    "llm_version":  "claude-code/claude-opus-4-8",
-                    "last_updated":  "2026-07-27T20:42:05.000Z",
-                    "mode":  "claude"
-                },
-                {
-                    "ticket_id":  "HELIOS-97990",
-                    "description":  "Chain runtime env injector into start (node scripts/inject-runtime-env.mjs then node .output/server/index.mjs) so ConfigManager Supabase vars reach window.__RUNTIME_ENV__; verified env-config.js populated (2048B) and /health 200 locally",
-                    "llm_version":  "claude-code/claude-opus-4-8",
-                    "last_updated":  "2026-07-27T21:10:43.000Z",
-                    "mode":  "claude"
-                },
-                {
-                    "ticket_id":  "HELIOS-97990",
-                    "description":  "Restore prebuild that regenerates public/env-config.js padded to exactly 2048B (removed by same Lovable sync as start); keeps build-time placeholder size matched to the runtime injector, preventing env-config.js content-length mismatch",
-                    "llm_version":  "claude-code/claude-opus-4-8",
-                    "last_updated":  "2026-07-27T21:30:16.000Z",
-                    "mode":  "claude"
-                },
-                {
-                    "ticket_id":  "ATHENA-3342",
-                    "description":  "-",
-                    "llm_version":  "claude-code/claude-sonnet-4-6",
-                    "last_updated":  "2026-08-06T21:10:06.461Z",
-                    "mode":  "claude-code"
-                },
-                {
-                    "ticket_id":  "HELIOS-98549",
-                    "description":  "Switch Google sign-in from the Lovable OAuth broker to supabase.auth.signInWithOAuth so login works on custom domains (the /~oauth/* broker path only exists on *.lovable.app and 404s on rdhq-training.webmdhelios.com)",
-                    "llm_version":  "claude-code/claude-opus-5",
-                    "last_updated":  "2026-08-06T21:30:00.000Z",
-                    "mode":  "claude"
-                },
-                {
-                    "ticket_id":  "ATHENA-3342",
-                    "description":  "-",
-                    "llm_version":  "claude-code/claude-sonnet-4-6",
-                    "last_updated":  "2026-08-06T21:39:30.803Z",
-                    "mode":  "claude-code"
-                }
-            ]
+  "log": [
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "-",
+      "llm_version": "claude-code/claude-sonnet-4-6",
+      "last_updated": "2026-07-20T19:52:48.236Z",
+      "mode": "claude-code"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "-",
+      "llm_version": "manual",
+      "last_updated": "2026-07-20T20:43:44.329Z",
+      "mode": "manual"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "-",
+      "llm_version": "manual",
+      "last_updated": "2026-07-20T21:27:34.269Z",
+      "mode": "manual"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "-",
+      "llm_version": "manual",
+      "last_updated": "2026-07-21T12:48:31.034Z",
+      "mode": "manual"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "-",
+      "llm_version": "manual",
+      "last_updated": "2026-07-21T13:47:04.762Z",
+      "mode": "manual"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "-",
+      "llm_version": "manual",
+      "last_updated": "2026-07-21T15:13:36.638Z",
+      "mode": "manual"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "Add start script (node .output/server/index.mjs) so Helios npm start boots the TanStack node-server; verified /health returns 200 locally",
+      "llm_version": "claude-code/claude-opus-4-8",
+      "last_updated": "2026-07-27T20:42:05.000Z",
+      "mode": "claude"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "Chain runtime env injector into start (node scripts/inject-runtime-env.mjs then node .output/server/index.mjs) so ConfigManager Supabase vars reach window.__RUNTIME_ENV__; verified env-config.js populated (2048B) and /health 200 locally",
+      "llm_version": "claude-code/claude-opus-4-8",
+      "last_updated": "2026-07-27T21:10:43.000Z",
+      "mode": "claude"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "Restore prebuild that regenerates public/env-config.js padded to exactly 2048B (removed by same Lovable sync as start); keeps build-time placeholder size matched to the runtime injector, preventing env-config.js content-length mismatch",
+      "llm_version": "claude-code/claude-opus-4-8",
+      "last_updated": "2026-07-27T21:30:16.000Z",
+      "mode": "claude"
+    },
+    {
+      "ticket_id": "ATHENA-3342",
+      "description": "-",
+      "llm_version": "claude-code/claude-sonnet-4-6",
+      "last_updated": "2026-08-06T21:10:06.461Z",
+      "mode": "claude-code"
+    },
+    {
+      "ticket_id": "HELIOS-98549",
+      "description": "Switch Google sign-in from the Lovable OAuth broker to supabase.auth.signInWithOAuth so login works on custom domains (the /~oauth/* broker path only exists on *.lovable.app and 404s on rdhq-training.webmdhelios.com)",
+      "llm_version": "claude-code/claude-opus-5",
+      "last_updated": "2026-08-06T21:30:00.000Z",
+      "mode": "claude"
+    },
+    {
+      "ticket_id": "ATHENA-3342",
+      "description": "-",
+      "llm_version": "claude-code/claude-sonnet-4-6",
+      "last_updated": "2026-08-06T21:39:30.803Z",
+      "mode": "claude-code"
+    },
+    {
+      "ticket_id": "ATHENA-3342",
+      "description": "-",
+      "llm_version": "claude-code/claude-sonnet-4-6",
+      "last_updated": "2026-08-07T05:49:01.980Z",
+      "mode": "claude"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "Fix Missing Supabase environment variable(s) error: __root.tsx's RootShell never had a <script src=/env-config.js> tag, so the browser never loaded it and window.__RUNTIME_ENV__ was never set client-side, regardless of ConfigManager/Vault having the correct values (confirmed those were already correct - the fix is purely the missing script tag). Also regenerated routeTree.gen.ts to include the /health route, fixing a stale pre-existing typecheck error. Works for deployed/production; local dev (vite dev) does not run the runtime injector so public/env-config.js stays a blank placeholder locally - separate follow-up if local dev needs real values too.",
+      "llm_version": "claude-code/claude-sonnet-5",
+      "last_updated": "2026-08-07T06:10:00.000Z",
+      "mode": "claude"
+    },
+    {
+      "ticket_id": "ATHENA-3342",
+      "description": "-",
+      "llm_version": "claude-code/claude-sonnet-4-6",
+      "last_updated": "2026-08-07T06:06:17.006Z",
+      "mode": "claude"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "Address Asterix review doc note: reword the env-config.js script comment to name the actual runtime env-injection pipeline (inject-runtime-env.mjs + ConfigManager/Vault) instead of just 'ConfigManager', for readers unfamiliar with that name",
+      "llm_version": "claude-code/claude-sonnet-5",
+      "last_updated": "2026-08-07T06:15:00.000Z",
+      "mode": "claude"
+    }
+  ]
 }
