@@ -86,7 +86,9 @@ function RootShell({ children }: { children: React.ReactNode }) {
         {/* Must load before any app code touches window.__RUNTIME_ENV__ (see
             src/utils/env.ts's getEnv and src/integrations/supabase/client.ts) - without this
             tag the browser never fetches env-config.js at all, so SUPABASE_URL/PUBLISHABLE_KEY
-            are always empty client-side regardless of what's registered in ConfigManager. */}
+            are always empty client-side. Populated by the runtime env-injection pipeline
+            (scripts/inject-runtime-env.mjs writes public/env-config.js at container start
+            from process.env, which Helios ConfigManager sets from Vault). */}
         <script src="/env-config.js"></script>
         <HeadContent />
       </head>

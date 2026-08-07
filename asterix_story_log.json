@@ -97,6 +97,20 @@
       "llm_version": "claude-code/claude-sonnet-5",
       "last_updated": "2026-08-07T06:10:00.000Z",
       "mode": "claude"
+    },
+    {
+      "ticket_id": "ATHENA-3342",
+      "description": "-",
+      "llm_version": "claude-code/claude-sonnet-4-6",
+      "last_updated": "2026-08-07T06:06:17.006Z",
+      "mode": "claude"
+    },
+    {
+      "ticket_id": "HELIOS-97990",
+      "description": "Address Asterix review doc note: reword the env-config.js script comment to name the actual runtime env-injection pipeline (inject-runtime-env.mjs + ConfigManager/Vault) instead of just 'ConfigManager', for readers unfamiliar with that name",
+      "llm_version": "claude-code/claude-sonnet-5",
+      "last_updated": "2026-08-07T06:15:00.000Z",
+      "mode": "claude"
     }
   ]
 }
