@@ -71,6 +71,10 @@
     "vite-tsconfig-paths": "^6.0.2",
     "zod": "^3.24.2"
   },
+  "overrides": {
+    "sharp": "^0.35.3",
+    "undici": "^7.28.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@lovable.dev/vite-tanstack-config": "2.9.1",

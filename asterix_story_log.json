@@ -118,6 +118,13 @@
       "llm_version": "claude-code/claude-sonnet-5",
       "last_updated": "2026-08-26T00:00:00.000Z",
       "mode": "claude-code"
+    },
+    {
+      "ticket_id": "HELIOS-99248",
+      "description": "Production deploy (pipeline 2918257) blocked by check_vulnerability policy gate: CVE-2026-12151 (undici WebSocket DoS, fixed >=7.28.0) and GHSA-f88m-g3jw-g9cj (sharp, fixed >=0.35.0). Both are transitive via @cloudflare/vite-plugin -> miniflare (build-time-only Cloudflare Workers dev simulator, unrelated to the app's actual node-server runtime). Added npm overrides pinning sharp to ^0.35.3 and undici to ^7.28.0, regenerated package-lock.json, verified npm run build still succeeds.",
+      "llm_version": "claude-code/claude-sonnet-5",
+      "last_updated": "2026-08-26T18:51:25.529Z",
+      "mode": "claude-code"
     }
   ]
 }
