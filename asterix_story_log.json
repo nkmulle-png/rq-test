@@ -125,6 +125,13 @@
       "llm_version": "claude-code/claude-sonnet-5",
       "last_updated": "2026-08-26T18:51:25.529Z",
       "mode": "claude-code"
+    },
+    {
+      "ticket_id": "HELIOS-99248",
+      "description": "Container scan on feature-helios-99248-fix-cve-vulnerabilities.1 surfaced 16 further Node/npm-level CVEs (the original CVE-2026-12151/GHSA-f88m-g3jw-g9cj were confirmed gone from this scan) across @babel/core, brace-expansion, esbuild, js-yaml, nanoid, postcss, vite, ws, launch-editor - all transitive build-tooling deps that still ship into the container image since npm i installs devDependencies too. Extended the overrides block to patched versions and bumped the direct vite devDependency; npm audit now reports 0 vulnerabilities and npm run build still succeeds. The remaining 9 libcrypto3/libssl3 (OpenSSL) findings are baked into the ikenv-node22-buildapp Alpine base image and are not fixable from this repo.",
+      "llm_version": "claude-code/claude-sonnet-5",
+      "last_updated": "2026-08-26T19:36:49.485Z",
+      "mode": "claude-code"
     }
   ]
 }
