@@ -1,7 +1,7 @@
 # SPEC: `/test-a` JSON Endpoint
 
 ## Objective
-
+kml
 Add a new HTTP endpoint at `/test-a` that returns a JSON `"hello world"` payload. Purpose is a minimal smoke-test/demo endpoint (mirrors the existing `/health` route's role, but returns JSON instead of an HTML fragment).
 
 **Target users:** internal developers verifying the TanStack Start server-route wiring on this deployment (HELIOS-99248 branch is CVE/deploy hardening work — this endpoint is a lightweight sanity check, not user-facing product functionality).
