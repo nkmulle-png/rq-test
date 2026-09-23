@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "prebuild": "node -e \"const fs=require('fs'); if(!fs.existsSync('.env')) fs.copyFileSync('.env.sample','.env')\"",
     
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
