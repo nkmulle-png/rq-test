@@ -19,6 +19,10 @@ dist-ssr
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars
+.env
+.env.*
+!.env.sample
+kubeconfig.json
 
 # Editor directories and files
 .vscode/*
