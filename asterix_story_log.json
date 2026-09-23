@@ -113,7 +113,7 @@
       "mode": "claude"
     },
     {
-      "ticket_id": "HELIOS-99248",
+      "ticket:"ppbbb",
       "description": "helios_devint deploy job crashlooping (pipeline 2871842): develop's package.json had no start script at all ('npm error Missing script: start'), causing readiness probe failures and eventual Helm rollout timeout. develop had drifted from main, which already carries this exact fix from HELIOS-97990 - restored the same prebuild/start scripts (chain scripts/inject-runtime-env.mjs then node .output/server/index.mjs) to develop.",
       "llm_version": "claude-code/claude-sonnet-5",
       "last_updated": "2026-08-26T00:00:00.000Z",
