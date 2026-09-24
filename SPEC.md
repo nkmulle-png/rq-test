@@ -65,4 +65,4 @@ export const Route = createFileRoute("/test-a")({
 
 ## Open Questions
 
-- None blocking — assumption 5 (no auth) is a judgment call based on the `/health` precedent; flag if `/test-a` should actually require auth.
+- None blocking — assumption 5 (no auth) is a judgment call based on the `/health` precedent; flag if `/test-a` should actually require auth. and
