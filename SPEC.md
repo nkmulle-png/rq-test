@@ -1,6 +1,6 @@
 # SPEC: `/test-a` JSON Endpoint
 
-## Objective
+## Objective  and 
 kml
 Add a new HTTP endpoint at `/test-a` that returns a JSON `"hello world"` payload. Purpose is a minimal smoke-test/demo endpoint (mirrors the existing `/health` route's role, but returns JSON instead of an HTML fragment).
 
