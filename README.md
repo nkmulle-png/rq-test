@@ -1,4 +1,4 @@
-# RDHQ Training Portal
+# GITHUB-SIDE-CONFLICT-TEST
 
 An internal training tracker for the RDHQ team. Employees browse training topics and courses for their tier, commit to and complete courses, and rate them. Managers get a read-only rollup of their team's progress. Users marked "Training Not Required" skip course selection and land on a shared course library / team view instead.
 
