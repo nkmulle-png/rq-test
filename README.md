@@ -1,6 +1,6 @@
 # GITHUB-SIDE-CONFLICT-TEST-V2
 
-An internal training tracker for the RDHQ team. Employees browse training topics and courses for their tier, commit to and complete courses, and rate them. Managers get a read-only rollup of their team's progress. Users marked "Training Not Required" skip course selection and land on a shared course library / team view instead.
+GITHUB-NEW-LINE-CHANGE — An internal training tracker for the RDHQ team. Employees browse training topics and courses for their tier, commit to and complete courses, and rate them. Managers get a read-only rollup of their team's progress. Users marked "Training Not Required" skip course selection and land on a shared course library / team view instead.
 
 Built with [TanStack Start](https://tanstack.com/start) (React 19) on Cloudflare Workers, with [Supabase](https://supabase.com/) as the data layer and `@lovable.dev/cloud-auth-js` for authentication.
 
