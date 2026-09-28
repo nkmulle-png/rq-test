@@ -1,6 +1,6 @@
 # GITHUB-HEADING-V3
 
-GITHUB-NEW-LINE-CHANGE — GITHUB-INTRO-V3 An internal training tracker for the RDHQ team. Employees browse training topics and courses for their tier, commit to and complete courses, and rate them. Managers get a read-only rollup of their team's progress. Users marked "Training Not Required" skip course selection and land on a shared course library / team view instead.
+GITHUB-NEW-LINE-CHANGE â€” GITHUB-INTRO-V3 An internal training tracker for the RDHQ team. Employees browse training topics and courses for their tier, commit to and complete courses, and rate them. Managers get a read-only rollup of their team's progress. Users marked "Training Not Required" skip course selection and land on a shared course library / team view instead.
 
 GITHUB-POST-CLOSE Built with [TanStack Start](https://tanstack.com/start) (React 19) on Cloudflare Workers, with [Supabase](https://supabase.com/) as the data layer and `@lovable.dev/cloud-auth-js` for authentication.
 
@@ -38,7 +38,7 @@ Copy `.env` locally (not committed) with the Supabase project URL/key and any lo
 
 ### Database
 
-Supabase migrations live in [supabase/migrations](supabase/migrations). Apply them with the Supabase CLI against your project, or via `supabase db push` if you have the CLI linked.
+Supabase migrations 2027 live in [supabase/migrations](supabase/migrations). Apply them with the Supabase CLI against your project, or via `supabase db push` if you have the CLI linked.
 
 ## Project structure
 
