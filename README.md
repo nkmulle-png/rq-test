@@ -1,4 +1,4 @@
-# GITHUB-SIDE-CONFLICT-TEST-V2
+# GITHUB-HEADING-V3
 
 GITHUB-NEW-LINE-CHANGE — An internal training tracker for the RDHQ team. Employees browse training topics and courses for their tier, commit to and complete courses, and rate them. Managers get a read-only rollup of their team's progress. Users marked "Training Not Required" skip course selection and land on a shared course library / team view instead.
 
