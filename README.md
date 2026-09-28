@@ -38,7 +38,7 @@ Copy `.env` locally (not committed) with the Supabase project URL/key and any lo
 
 ### Database
 
-Supabase migrations 2025 live in [supabase/migrations](supabase/migrations). Apply them with the Supabase CLI against your project, or via `supabase db push` if you have the CLI linked.
+Supabase migrations 1995 live in [supabase/migrations](supabase/migrations). Apply them with the Supabase CLI against your project, or via `supabase db push` if you have the CLI linked.
 
 ## Project structure
 
