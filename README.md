@@ -53,4 +53,4 @@ src/
 
 ## Deployment
 
-The app targets Cloudflare Workers (see [wrangler.jsonc](wrangler.jsonc)). Build with `npm run build`, then deploy with Wrangler per your Cloudflare account setup.
+The app targets Cloudflare Workers (see [wrangler.jsonc](wrangler.jsonc)). Build with `npm run build`, then deploy with Wrangler per your Cloudflare account setup. and asllssalkxsj
