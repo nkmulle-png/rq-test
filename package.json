@@ -1,5 +1,6 @@
 {
   "name": "tanstack_start_ts",
+  "description": "nish-test change",
   "private": true,
   "sideEffects": false,
   "type": "module",
